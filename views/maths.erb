@@ -1,0 +1,17 @@
+<% def ops(op,num1,num2)
+case @operation
+when 'add'
+  num1.to_i + num2.to_i
+when 'subtract'
+  num1.to_i - num2.to_i
+when 'multiply'
+  num1.to_i * num2.to_i
+when 'divide'
+  num1.to_i/num2.to_i
+else
+  "Error"
+end
+  end
+
+  %>
+<%= ops(@operation,@number1,@number2) %>
